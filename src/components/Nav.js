@@ -1,7 +1,9 @@
 import React from 'react';
 // import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav( currentPage, handlePageChange ) {
+function Nav({ currentPage, handlePageChange }) {
+
+  
   return (
     <header className="flex-row px-1">
       <h2>
@@ -10,7 +12,7 @@ function Nav( currentPage, handlePageChange ) {
         </a>
       </h2>
       <ul className="flex-row">
-        <li className="mx-2">
+        {/* <li className="mx-2">
           <a
             href="#home"
             onClick={() => handlePageChange('Home')}
@@ -20,7 +22,7 @@ function Nav( currentPage, handlePageChange ) {
           >
             Home
           </a>
-        </li>
+        </li> */}
         <li className="mx-2">
           <a
             href="#about"
@@ -44,9 +46,9 @@ function Nav( currentPage, handlePageChange ) {
         <li className="mx-2">
           <a
             href="#contact"
-            onClick={() => handlePageChange('Contact')}
+            onClick={() => handlePageChange('ContactForm')}
             // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === 'ContactForm' ? 'nav-link active' : 'nav-link'}
           >
             Contact
           </a>

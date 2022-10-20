@@ -11,7 +11,7 @@ export default function PortfolioContainer() {
   const [categories] = useState([
     {
       name: 'projects',
-      description: 'Projects created'
+      description: 'Click on the images below for more details on each project!'
     }
   ]);
 
@@ -43,8 +43,37 @@ export default function PortfolioContainer() {
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      <footer>
-        This is a footer
+      <footer className='flex-row px-1'>
+        <div className='flex-row'>
+          <span>
+            Created by Morgan Gilbert
+          </span>
+        </div>
+        <div>
+          <span className="mx-2">
+            <a href="tel:910-338-6005">(910) 338-6005</a>
+          </span>
+        </div>
+        <div>
+          <span className="mx-2">
+            <a href="mailto:morgan.el.gilbert@gmail.com">morgan.el.gilbert@gmail.com</a>
+          </span>
+        </div>
+        <div>
+          <span className="mx-2">
+            <a href="#github">GitHub</a>
+          </span>
+        </div>
+        <div>
+          <span className="mx-2">
+            <a href="https://twitter.com/?lang=en">Twitter</a>
+          </span>
+        </div>
+        <div>
+          <span className="mx-2">
+            <a href="https://www.spotify.com/us/">Spotify</a>
+          </span>
+        </div>      
       </footer>
     </div>
   );

@@ -3,12 +3,13 @@ main {
   max-width: 90%;
   padding: 50px 30px;
 }
+
 :root {
-  --primary: #8c54ff;
-  --secondary: #f3a847;
-  --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #000000;
+  --primary: #5b9279;
+  --secondary: #d5f7f3;
+  --tertiary: #8f8073;
+  --light: #eae6e5;
+  --dark: #12130f;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -32,9 +33,15 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
-  color: var(--light);
+  background: var(--secondary);
+  color: var(--dark);
   font-family: 'Poiret One', cursive;
+}
+
+section {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
 }
 
 h1,
@@ -76,6 +83,11 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: var(--darker);
+  text-shadow: -1px 1px 0 var(--secondary),
+                1px 1px 0 var(--secondary),
+                1px -1px 0 var(--secondary),
+               -1px -1px 0 var(--secondary);
 }
 
 a {
@@ -89,7 +101,14 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  /* background: var(--dark); */
+  background-image: url("./assets/images/background/shades2.png");
+  background-size: cover;
+}
+
+ul {
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 header a {
@@ -127,6 +146,8 @@ span[role='img'] {
 
 form {
   width: 40%;
+  display: block;
+  text-align: right;
 }
 
 input {
@@ -145,6 +166,7 @@ input:focus {
 
 li {
   list-style: none;
+  mix-blend-mode:hard-light;
 }
 
 nav a:hover {
@@ -240,7 +262,7 @@ textarea {
 }
 
 .modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.90);
   bottom: 0;
   left: 0;
   overflow: auto;
@@ -251,18 +273,27 @@ textarea {
 }
 
 .modalContainer {
-  background: var(--darker);
+  /* background: var(--darker); */
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
   padding: 15px;
   width: 960px;
+  align-items: center;
+  text-align: center;
+  border-width:3px;
+  border-style:solid;
+  border-color:var(--secondary);
 }
 
 .modalTitle {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 25px;
+  text-shadow: -1px 1px 0 var(--secondary),
+                1px 1px 0 var(--secondary),
+                1px -1px 0 var(--secondary),
+                -1px -1px 0 var(--secondary);
 }
 
 button {
@@ -271,7 +302,7 @@ button {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 30px;
   padding: 10px 15px;
@@ -279,7 +310,7 @@ button {
 
 a {
   border-radius: 5px;
-  color: var(--primary);
+  color: var(--light);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
@@ -288,5 +319,24 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.resume {
+  color: darkblue;
+}
+
+.link {
+  text-shadow: none;
+}
+
+footer {
+  background-image: url("./assets/images/background/shades2.png");
+  color: var(--light);
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 9px 0px;
 }
 

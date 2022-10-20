@@ -10,20 +10,19 @@ const Projects = ({ category }) => {
       name: 'DIY Bartender',
       category: 'projects',
       description:
-        'HTML, CSS, and Javascript'
+        'HTML, CSS, and Javascript',
+      gitHub: "https://github.com/ParaRiot/DIY-Bartender",
+      activePage: "https://parariot.github.io/DIY-Bartender/"
     },
     {
       name: 'Pawfect Pets',
       category: 'projects',
       description:
-        'HTML, CSS, Javascript Bulma CSS, Font Awesome NPM Packages: bcrypt, connect-session-sequelize, and express-session'
+        'HTML, CSS, Javascript Bulma CSS, Font Awesome NPM Packages: bcrypt, connect-session-sequelize, and express-session',
+      gitHub: "https://github.com/Mayfieldmel/Pawfect-Friends",
+      activePage: "https://pawfect-friends-app.herokuapp.com/"
     },
-    {
-      name: 'Test',
-      category: 'projects',
-      description:
-        'HTML, CSS, Javascript Bulma CSS, Font Awesome NPM Packages: bcrypt, connect-session-sequelize, and express-session'
-    },
+
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);

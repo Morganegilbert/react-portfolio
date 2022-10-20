@@ -1,11 +1,15 @@
 import React from 'react';
-// import coverImage from '../assets/cover/cover-image.jpg';
+import me from '../assets/images/me/photo-me.jpg';
 
 function About() {
   return (
     <section className="my-5">
       <h1 id="about">About Me</h1>
-      {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
+      <img
+            src={me}
+            alt=""
+            className="img-thumbnail mx-1"
+      />
       <div className="my-2">
         <p>
         Morgan Gilbert is an Environmental Scientist in the Environmental

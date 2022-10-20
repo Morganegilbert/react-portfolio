@@ -2,8 +2,8 @@ import React from "react";
 
 function Resume() {
     return (
-        <section>
-            <p>Download my resume</p>
+        <section  class="resume-info">
+            <p>Download my <a class="resume" href='./assets/files/Resume_2022.pdf' download>Resume</a></p>
             <div>
                 <h2>Front-end Proficiencies</h2>
                 <ul>
@@ -11,13 +11,23 @@ function Resume() {
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>JQuery</li>
-                    <li>responsive design</li>
+                    <li>Responsive Sesign</li>
                     <li>React</li>
                     <li>Bootstrap</li>
-
                 </ul>                
             </div>
-
+            <div>
+                <h2>Back-end Proficiencies</h2>
+                <ul>
+                    <li>APIs</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MySQL, Sequelize</li>
+                    <li>MongoDB, Mongoose</li>
+                    <li>REST</li>
+                    <li>GraphQL</li>
+                </ul>                
+            </div>
         </section>
     )
 }

@@ -8,7 +8,7 @@ function Nav({ currentPage, handlePageChange }) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+          <span role="img" aria-label="cat"> 🐈</span> Morgan Gilbert
         </a>
       </h2>
       <ul className="flex-row">

@@ -323,8 +323,9 @@ a {
   margin-right: -2px;
 }
 
-.navActive {
-  color: var(--secondary);
+.active {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .resume {

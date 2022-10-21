@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio",
-  "homepage": "http://morganegilbert.github.io/photo-port",
+  "homepage": "http://morganegilbert.github.io/react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

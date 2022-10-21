@@ -6,7 +6,7 @@ function Nav({ currentPage, handlePageChange }) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
+        <a data-testid="link" href="/about">
           <span role="img" aria-label="cat"> 🐈</span> Morgan Gilbert
         </a>
       </h2>

@@ -8,6 +8,7 @@ import './App.css';
 // import PhotoList from './components/PhotoList';
 // import ContactForm from './components/Contact';
 import PortfolioContainer from "./components/PortfolioContainer";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

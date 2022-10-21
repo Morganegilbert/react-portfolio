@@ -259,6 +259,12 @@ textarea {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  filter: brightness(70%);
+
+}
+
+.img-thumbnail:hover {
+  filter: brightness(100%);
 }
 
 .modalBackdrop {
@@ -327,6 +333,10 @@ a {
 
 .link {
   text-shadow: none;
+}
+
+.error-text {
+  color: red!;
 }
 
 footer {

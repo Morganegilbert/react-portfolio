@@ -32,7 +32,7 @@
     * web-vitals: ^2.1.
 
 # Screenshot
-![React Portfolio](./utils/images/demo.JPG "React Portfolio")
+![React Portfolio](./src/utils/demo.jpg "React Portfolio")
 <br>
 <br>
 
